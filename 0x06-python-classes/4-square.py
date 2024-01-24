@@ -15,7 +15,7 @@ class Square:
         Returns:
             None
         """
-        swlf.size = size
+        self.size = size
 
     def area(self):
         """Calculates the area ofr the square
