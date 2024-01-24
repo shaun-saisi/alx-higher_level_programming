@@ -4,9 +4,10 @@ class Square:
     """ This is a square with a private instance attribute which is size"""
 
     def __init__(self, size = 0):
-         """
+        """
          Args:
-            size: This is thes izeof tthe square"""
+            size: This is thes izeof tthe square
+        """
 
         if type(size) is int:
             if size < 0:
