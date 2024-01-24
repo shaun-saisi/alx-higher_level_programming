@@ -1,4 +1,5 @@
 #!/usr/bin/python3
+""" defines the class"""
 
 class Square:
     """ This is a square with a private instance attribute which is size"""
