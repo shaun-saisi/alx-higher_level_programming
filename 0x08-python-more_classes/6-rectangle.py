@@ -1,15 +1,16 @@
 #!/usr/bin/python3
-"""ss Rectangle with area and perimeter"""
+"""Class Rectangle with area and perimeter"""
 
 
 class Rectangle:
     """Just a rectangle"""
-    number _of instances = 0
+    number_of_instances = 0  # Corrected the variable name
+
     def __init__(self, width=0, height=0):
         """Initializing the rectangle"""
         self.width = width
         self.height = height
-	Rectangle.number_of_instances += 1
+        Rectangle.number_of_instances += 1
 
     @property
     def width(self):
@@ -42,7 +43,7 @@ class Rectangle:
     def __del__(self):
         """Print a delete message"""
         print("Bye rectangle...")
-	Rectangle.number_of_instances -= 1:
+        Rectangle.number_of_instances -= 1  # Corrected the syntax
 
     def perimeter(self):
         """The perimeter of the rectangle"""
