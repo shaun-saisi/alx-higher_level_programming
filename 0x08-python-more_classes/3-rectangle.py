@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-"""cass Rectangle with area and perimeter"""
+"""ss Rectangle with area and perimeter"""
 
 
 class Rectangle:
@@ -47,10 +47,10 @@ class Rectangle:
         """The area of the rectangle"""
         return self.__height * self.__width
 
-   def __str__(self):
-	"""Returns a string"""
-	string = ""
-	if self.__height and slef.__width != 0:
-            string += .join("#" * self.__width
-                    for j in range(self.__height)
+    def __str__(self):
+        """Returns a string"""
+        string = ""
+        if self.__height != 0 and self.__width != 0:
+            string += "\n".join("#" * self.__width for _ in range(self.__height))
         return string
+
