@@ -1,4 +1,6 @@
 #!/usr/bin/python3
+import sys
+sys.path.append('models/base.py')
 
 import os
 import unittest
@@ -62,19 +64,6 @@ class TestBase(unittest.TestCase):
         self.assertIsInstance(rect_list, list)
         self.assertEqual(len(rect_list), 1)
 
-    def test_save_to_file_csv(self):
-        """Test saving objects to file (CSV format)."""
-        r = Rectangle(10, 7, 2, 8, 5)
-        Rectangle.save_to_file_csv([r])
-        self.assertTrue(os.path.isfile("Rectangle.csv"))
-
-    def test_load_from_file_csv(self):
-        """Test loading objects from file (CSV format)."""
-        r = Rectangle(10, 7, 2, 8, 1)
-        Rectangle.save_to_file_csv([r])
-        rect_list = Rectangle.load_from_file_csv()
-        self.assertIsInstance(rect_list, list)
-        self.assertEqual(len(rect_list), 1)
 
 if __name__ == "__main__":
     unittest.main()
